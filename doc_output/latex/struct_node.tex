@@ -1,0 +1,57 @@
+\doxysection{Node Struct Reference}
+\hypertarget{struct_node}{}\label{struct_node}\index{Node@{Node}}
+
+
+Estrutura que representa um vértice num grafo.  
+
+
+
+
+{\ttfamily \#include $<$header.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_node_a59a543130a10c95f1e8642cf8c5645e8}{id}}
+\item 
+bool \mbox{\hyperlink{struct_node_aa1bdec4e775fc578632e6a2dced9e251}{visited}}
+\item 
+\mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_node_a437bfb484f0d9146754591c91839a4e4}{next\+Adjacent}}
+\item 
+struct \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_node_a526f6649326bba645a953478e688bdd8}{next\+Vertice}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Estrutura que representa um vértice num grafo. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_node_a59a543130a10c95f1e8642cf8c5645e8}\label{struct_node_a59a543130a10c95f1e8642cf8c5645e8} 
+\index{Node@{Node}!id@{id}}
+\index{id@{id}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int Node\+::id}
+
+Identificador do vértice. \Hypertarget{struct_node_a437bfb484f0d9146754591c91839a4e4}\label{struct_node_a437bfb484f0d9146754591c91839a4e4} 
+\index{Node@{Node}!nextAdjacent@{nextAdjacent}}
+\index{nextAdjacent@{nextAdjacent}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{nextAdjacent}{nextAdjacent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_adjacent}{Adjacent}}\texorpdfstring{$\ast$}{*} Node\+::next\+Adjacent}
+
+Ponteiro para o primeiro vértice adjacente. \Hypertarget{struct_node_a526f6649326bba645a953478e688bdd8}\label{struct_node_a526f6649326bba645a953478e688bdd8} 
+\index{Node@{Node}!nextVertice@{nextVertice}}
+\index{nextVertice@{nextVertice}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{nextVertice}{nextVertice}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_node}{Node}}\texorpdfstring{$\ast$}{*} Node\+::next\+Vertice}
+
+Ponteiro para o próximo vértice na lista de vértices do grafo. \Hypertarget{struct_node_aa1bdec4e775fc578632e6a2dced9e251}\label{struct_node_aa1bdec4e775fc578632e6a2dced9e251} 
+\index{Node@{Node}!visited@{visited}}
+\index{visited@{visited}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{visited}{visited}}
+{\footnotesize\ttfamily bool Node\+::visited}
+
+Indica se o vértice foi visitado durante uma travessia. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{header_8h}{header.\+h}}\end{DoxyCompactItemize}

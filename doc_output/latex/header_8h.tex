@@ -1,0 +1,684 @@
+\doxysection{header.\+h File Reference}
+\hypertarget{header_8h}{}\label{header_8h}\index{header.h@{header.h}}
+
+
+Declarações das funções e estruturas.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_adjacent}{Adjacent}}
+\begin{DoxyCompactList}\small\item\em Estrutura que representa as adjacêcias num grafo. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_node}{Node}}
+\begin{DoxyCompactList}\small\item\em Estrutura que representa um vértice num grafo. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_graph}{Graph}}
+\begin{DoxyCompactList}\small\item\em Estrutura que representa um grafo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{header_8h_a215706f0e019b7f580af674fb3d3a3c2}\label{header_8h_a215706f0e019b7f580af674fb3d3a3c2} 
+typedef struct Adjacent {\bfseries Adjacent}
+\begin{DoxyCompactList}\small\item\em Estrutura que representa as adjacêcias num grafo. \end{DoxyCompactList}\item 
+\Hypertarget{header_8h_a3b09f37e675bcd48a01bf22155996872}\label{header_8h_a3b09f37e675bcd48a01bf22155996872} 
+typedef struct Node {\bfseries Node}
+\begin{DoxyCompactList}\small\item\em Estrutura que representa um vértice num grafo. \end{DoxyCompactList}\item 
+\Hypertarget{header_8h_a0c94bbeb31bba748d2897a168f62e9bc}\label{header_8h_a0c94bbeb31bba748d2897a168f62e9bc} 
+typedef struct Graph {\bfseries Graph}
+\begin{DoxyCompactList}\small\item\em Estrutura que representa um grafo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_ae18bed4050475b99f16dd647e690e6a3}{Ler\+Ficheiro}} (char \texorpdfstring{$\ast$}{*}ficheiro\+Txt, \mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}graph)
+\begin{DoxyCompactList}\small\item\em Lê os dados de um ficheiro de texto e cria uma matriz a partir deles. \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_aa5df864306d40237659e24e470cedc6b}{Procurar\+Valor}} (char \texorpdfstring{$\ast$}{*}ficheiro\+Txt, int v)
+\begin{DoxyCompactList}\small\item\em Procura e retorna um valor num ficheiro de texto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a436d8bb2a36613ee63d6fd6ae9c367a2}{Cria\+Vertice}} (int id)
+\begin{DoxyCompactList}\small\item\em Cria um novo vértice para um grafo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{header_8h_a6dea9f13918b83be6719ed7c2566c022}{Existe\+Vertice}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}inicio, int id)
+\begin{DoxyCompactList}\small\item\em Verifica se determinado vertice existe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a09907c3c8adcbaf9bb15ff9fc58b017f}{Insere\+Vertice}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}inicio, \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}novo, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Insere Vertice ordenado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a57eae68d7cd4dcd46a6aaddb9927c6ac}{Elimina\+Vertice}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}vertices, int cod\+Vertice, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Apaga vertice na lista de vertices de um grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a31002130c8e8b31acfcaec90d310198a}{Onde\+Esta\+Vertice}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}inicio, int id)
+\begin{DoxyCompactList}\small\item\em Verifica se determinado vertice existe. Devolve o vertice, caso exista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_ad62c8976e7917f350fe6b244f76ed973}{Show\+Graph}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}graph)
+\item 
+\mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_af9826564c3a9ed78cb7cf401c02736a4}{New\+Adjacent}} (int id, int dist)
+\begin{DoxyCompactList}\small\item\em Cria mem{\ucr}ria para uma nova Adjac{\ucr}ncia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_ae306bed327a1428025ace13cf7ac6183}{Elimimina\+Adj}} (\mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*}list\+Adj, int cod\+Adj, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Apaga adjacencia na Lista de Adjacencias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a896186c8763d6951bfe5f497a0230df3}{Elimimina\+All\+Adj}} (\mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*}list\+Adj, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Apaga todas as adjac{\ucr}ncias de uma LA. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a3085981995c6a5d3403cc721ec8a804d}{Elimina\+Adjacencia\+All\+Vertices}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}vertices, int cod\+Adj, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Apaga uma determinada adjacencia em todos os vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a5e5cd853145b900f3a88477da65cdb24}{Insere\+Adj}} (\mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*}lista\+Adja, int id\+Destino, int dist)
+\begin{DoxyCompactList}\small\item\em Insere nova adjacencia na LA (opcao 1) Adjac{\ucr}ncia criada dentro da fun{\ucr}{\ucr}o. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_ac428ae88ea64c31d2dd5fdb091cf5cdc}{Show\+Gaph\+LA}} (\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}gr)
+\begin{DoxyCompactList}\small\item\em Apresenta grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a3a594e0cfbee726d9b4e48fe1faeff9b}{Insere\+Vertice\+Grafo}} (\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}g, \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}vertice, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Insere Vertice num grafo (opcao 2) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a10ee6799c48e8e5f1c0da5947a5c26e6}{Elimina\+Vertice\+Graph}} (\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}g, int cod\+Vertice, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Apaga vertice de um grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_aedcbd2c3cefcfb85a1b7ca54aa45d116}{Elimina\+Adj\+Graph}} (\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}g, int origem, int destino, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Apaga adjacencia entre dois vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a40059d17191bc99070607de8e4d5982e}{Onde\+Esta\+Vertice\+Graph}} (\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}g, int id\+Vertice)
+\begin{DoxyCompactList}\small\item\em Procura determinado vertice num grafo Devolve o vertice, caso exista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a2d534f07c5d3bd193231c615f4b8b15a}{Insere\+Adja\+Grafo}} (\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}g, int id\+Origem, int id\+Destino, int dist, bool \texorpdfstring{$\ast$}{*}res, int num\+Colunas)
+\begin{DoxyCompactList}\small\item\em Insere nova adjacencia (opcao 2) no grafo Com controlo de sucesso Invoca fun{\ucr}{\ucr}o que gere lista de adjacencias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_ade662ab8543a4c89a6d4db5e1e0d1d6b}{Cria\+Graph\+H3}} ()
+\begin{DoxyCompactList}\small\item\em Cria mem{\ucr}ria para a estrutura Grafo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{header_8h_ab7e3174a9f3ce59fe803921ed29ec419}{Existe\+Vertice\+Graph}} (\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}inicio, int id\+Vertice)
+\begin{DoxyCompactList}\small\item\em Verifica se determinado vertice existe num grafo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_a84eb164d56165c00519fa3829f536fcf}{Processa\+Vertice}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Processa um vértice. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{header_8h_a7f4076a3492f55e74a2dfdd488256e54}{Breadth\+First\+Search\+Caminho\+LA}} (\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}g, int v\+Origin, int v\+Final, int \texorpdfstring{$\ast$}{*}totdist)
+\begin{DoxyCompactList}\small\item\em Realiza a busca em largura em um grafo utilizando listas de adjacências para encontrar um caminho entre dois vértices. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{header_8h_acbe5a337361a467c0ccdc545b453ca0c}{Breadth\+First\+Search\+Caminho\+Grafo\+LA}} (\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}g, int v\+Origin, int v\+Final, int num\+Vert, int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}lista\+Caminho, int \texorpdfstring{$\ast$}{*}size, int \texorpdfstring{$\ast$}{*}max)
+\begin{DoxyCompactList}\small\item\em Realiza a busca em largura em um grafo utilizando listas de adjacências para encontrar um caminho entre dois vértices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a2f9dce241df30d99d07883f099565f27}{Reset\+Vertices}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}inicio)
+\begin{DoxyCompactList}\small\item\em Reseta o estado de visitado de todos os vértices na lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declarações das funções e estruturas. 
+
+\begin{DoxyAuthor}{Author}
+André Silva n20750 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Maio 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{header_8h_acbe5a337361a467c0ccdc545b453ca0c}\label{header_8h_acbe5a337361a467c0ccdc545b453ca0c} 
+\index{header.h@{header.h}!BreadthFirstSearchCaminhoGrafoLA@{BreadthFirstSearchCaminhoGrafoLA}}
+\index{BreadthFirstSearchCaminhoGrafoLA@{BreadthFirstSearchCaminhoGrafoLA}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{BreadthFirstSearchCaminhoGrafoLA()}{BreadthFirstSearchCaminhoGrafoLA()}}
+{\footnotesize\ttfamily bool Breadth\+First\+Search\+Caminho\+Grafo\+LA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{v\+Origin,  }\item[{int}]{v\+Final,  }\item[{int}]{num\+Vert,  }\item[{int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{lista\+Caminho,  }\item[{int \texorpdfstring{$\ast$}{*}}]{size,  }\item[{int \texorpdfstring{$\ast$}{*}}]{max }\end{DoxyParamCaption})}
+
+
+
+Realiza a busca em largura em um grafo utilizando listas de adjacências para encontrar um caminho entre dois vértices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Grafo no qual a busca será realizada. \\
+\hline
+{\em v\+Origin} & Vértice de origem. \\
+\hline
+{\em v\+Final} & Vértice de destino. \\
+\hline
+{\em num\+Vert} & Número total de vértices no grafo. \\
+\hline
+{\em lista\+Caminho} & Ponteiro para a lista de caminho encontrado. \\
+\hline
+{\em size} & Ponteiro para armazenar o tamanho do caminho encontrado. \\
+\hline
+{\em max} & Ponteiro para armazenar o tamanho máximo do caminho. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Verdadeiro se um caminho entre os vértices foi encontrado, falso caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{header_8h_a7f4076a3492f55e74a2dfdd488256e54}\label{header_8h_a7f4076a3492f55e74a2dfdd488256e54} 
+\index{header.h@{header.h}!BreadthFirstSearchCaminhoLA@{BreadthFirstSearchCaminhoLA}}
+\index{BreadthFirstSearchCaminhoLA@{BreadthFirstSearchCaminhoLA}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{BreadthFirstSearchCaminhoLA()}{BreadthFirstSearchCaminhoLA()}}
+{\footnotesize\ttfamily bool Breadth\+First\+Search\+Caminho\+LA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{v\+Origin,  }\item[{int}]{v\+Final,  }\item[{int \texorpdfstring{$\ast$}{*}}]{totdist }\end{DoxyParamCaption})}
+
+
+
+Realiza a busca em largura em um grafo utilizando listas de adjacências para encontrar um caminho entre dois vértices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Grafo no qual a busca será realizada. \\
+\hline
+{\em v\+Origin} & Vértice de origem. \\
+\hline
+{\em v\+Final} & Vértice de destino. \\
+\hline
+{\em totdist} & Ponteiro para armazenar a distância total percorrida no caminho encontrado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Verdadeiro se um caminho entre os vértices foi encontrado, falso caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{header_8h_ade662ab8543a4c89a6d4db5e1e0d1d6b}\label{header_8h_ade662ab8543a4c89a6d4db5e1e0d1d6b} 
+\index{header.h@{header.h}!CriaGraphH3@{CriaGraphH3}}
+\index{CriaGraphH3@{CriaGraphH3}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{CriaGraphH3()}{CriaGraphH3()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*} Cria\+Graph\+H3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cria mem{\ucr}ria para a estrutura Grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tot} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+1.\+05.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_a436d8bb2a36613ee63d6fd6ae9c367a2}\label{header_8h_a436d8bb2a36613ee63d6fd6ae9c367a2} 
+\index{header.h@{header.h}!CriaVertice@{CriaVertice}}
+\index{CriaVertice@{CriaVertice}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{CriaVertice()}{CriaVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} Cria\+Vertice (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Cria um novo vértice para um grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador do vértice a ser criado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para o novo vértice, ou NULL se a alocação de memória falhar. 
+\end{DoxyReturn}
+\Hypertarget{header_8h_ae306bed327a1428025ace13cf7ac6183}\label{header_8h_ae306bed327a1428025ace13cf7ac6183} 
+\index{header.h@{header.h}!ElimiminaAdj@{ElimiminaAdj}}
+\index{ElimiminaAdj@{ElimiminaAdj}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{ElimiminaAdj()}{ElimiminaAdj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*} Elimimina\+Adj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*}}]{list\+Adj,  }\item[{int}]{cod\+Adj,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Apaga adjacencia na Lista de Adjacencias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list\+Adj} & -\/ \\
+\hline
+{\em cod\+Adj} & -\/ \\
+\hline
+{\em res} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+29.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_a896186c8763d6951bfe5f497a0230df3}\label{header_8h_a896186c8763d6951bfe5f497a0230df3} 
+\index{header.h@{header.h}!ElimiminaAllAdj@{ElimiminaAllAdj}}
+\index{ElimiminaAllAdj@{ElimiminaAllAdj}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{ElimiminaAllAdj()}{ElimiminaAllAdj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*} Elimimina\+All\+Adj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*}}]{list\+Adj,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Apaga todas as adjac{\ucr}ncias de uma LA. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list\+Adj} & -\/ \\
+\hline
+{\em res} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+29.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_a3085981995c6a5d3403cc721ec8a804d}\label{header_8h_a3085981995c6a5d3403cc721ec8a804d} 
+\index{header.h@{header.h}!EliminaAdjacenciaAllVertices@{EliminaAdjacenciaAllVertices}}
+\index{EliminaAdjacenciaAllVertices@{EliminaAdjacenciaAllVertices}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{EliminaAdjacenciaAllVertices()}{EliminaAdjacenciaAllVertices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} Elimina\+Adjacencia\+All\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{cod\+Adj,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Apaga uma determinada adjacencia em todos os vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & -\/ \\
+\hline
+{\em cod\+Adj} & -\/ \\
+\hline
+{\em res} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+29.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_aedcbd2c3cefcfb85a1b7ca54aa45d116}\label{header_8h_aedcbd2c3cefcfb85a1b7ca54aa45d116} 
+\index{header.h@{header.h}!EliminaAdjGraph@{EliminaAdjGraph}}
+\index{EliminaAdjGraph@{EliminaAdjGraph}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{EliminaAdjGraph()}{EliminaAdjGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*} Elimina\+Adj\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{origem,  }\item[{int}]{destino,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Apaga adjacencia entre dois vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ \\
+\hline
+{\em origem} & -\/ \\
+\hline
+{\em destino} & -\/ \\
+\hline
+{\em res} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+29.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_a57eae68d7cd4dcd46a6aaddb9927c6ac}\label{header_8h_a57eae68d7cd4dcd46a6aaddb9927c6ac} 
+\index{header.h@{header.h}!EliminaVertice@{EliminaVertice}}
+\index{EliminaVertice@{EliminaVertice}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{EliminaVertice()}{EliminaVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} Elimina\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{cod\+Vertice,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Apaga vertice na lista de vertices de um grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & -\/ \\
+\hline
+{\em cod\+Vertice} & -\/ \\
+\hline
+{\em res} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+29.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_a10ee6799c48e8e5f1c0da5947a5c26e6}\label{header_8h_a10ee6799c48e8e5f1c0da5947a5c26e6} 
+\index{header.h@{header.h}!EliminaVerticeGraph@{EliminaVerticeGraph}}
+\index{EliminaVerticeGraph@{EliminaVerticeGraph}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{EliminaVerticeGraph()}{EliminaVerticeGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*} Elimina\+Vertice\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{cod\+Vertice,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Apaga vertice de um grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ \\
+\hline
+{\em cod\+Vertice} & -\/ \\
+\hline
+{\em res} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+29.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_a6dea9f13918b83be6719ed7c2566c022}\label{header_8h_a6dea9f13918b83be6719ed7c2566c022} 
+\index{header.h@{header.h}!ExisteVertice@{ExisteVertice}}
+\index{ExisteVertice@{ExisteVertice}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{ExisteVertice()}{ExisteVertice()}}
+{\footnotesize\ttfamily bool Existe\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{inicio,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Verifica se determinado vertice existe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & -\/ \\
+\hline
+{\em id} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+23.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_ab7e3174a9f3ce59fe803921ed29ec419}\label{header_8h_ab7e3174a9f3ce59fe803921ed29ec419} 
+\index{header.h@{header.h}!ExisteVerticeGraph@{ExisteVerticeGraph}}
+\index{ExisteVerticeGraph@{ExisteVerticeGraph}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{ExisteVerticeGraph()}{ExisteVerticeGraph()}}
+{\footnotesize\ttfamily bool Existe\+Vertice\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{id\+Vertice }\end{DoxyParamCaption})}
+
+
+
+Verifica se determinado vertice existe num grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ \\
+\hline
+{\em id\+Vertice} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+23.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_a5e5cd853145b900f3a88477da65cdb24}\label{header_8h_a5e5cd853145b900f3a88477da65cdb24} 
+\index{header.h@{header.h}!InsereAdj@{InsereAdj}}
+\index{InsereAdj@{InsereAdj}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{InsereAdj()}{InsereAdj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*} Insere\+Adj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*}}]{lista\+Adja,  }\item[{int}]{id\+Destino,  }\item[{int}]{dist }\end{DoxyParamCaption})}
+
+
+
+Insere nova adjacencia na LA (opcao 1) Adjac{\ucr}ncia criada dentro da fun{\ucr}{\ucr}o. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Adja} & -\/ \\
+\hline
+{\em id\+Destino} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+29.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_a2d534f07c5d3bd193231c615f4b8b15a}\label{header_8h_a2d534f07c5d3bd193231c615f4b8b15a} 
+\index{header.h@{header.h}!InsereAdjaGrafo@{InsereAdjaGrafo}}
+\index{InsereAdjaGrafo@{InsereAdjaGrafo}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{InsereAdjaGrafo()}{InsereAdjaGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*} Insere\+Adja\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{id\+Origem,  }\item[{int}]{id\+Destino,  }\item[{int}]{dist,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res,  }\item[{int}]{num\+Colunas }\end{DoxyParamCaption})}
+
+
+
+Insere nova adjacencia (opcao 2) no grafo Com controlo de sucesso Invoca fun{\ucr}{\ucr}o que gere lista de adjacencias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ \\
+\hline
+{\em id\+Origem} & -\/ \\
+\hline
+{\em id\+Destino} & -\/ \\
+\hline
+{\em res} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+24.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_a09907c3c8adcbaf9bb15ff9fc58b017f}\label{header_8h_a09907c3c8adcbaf9bb15ff9fc58b017f} 
+\index{header.h@{header.h}!InsereVertice@{InsereVertice}}
+\index{InsereVertice@{InsereVertice}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{InsereVertice()}{InsereVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} Insere\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{novo,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Insere Vertice ordenado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Ponteiro para o primeiro vértice na lista de vértices \\
+\hline
+{\em novo} & Ponteiro para o vértice a ser inserido. \\
+\hline
+{\em res} & Ponteiro para um booleano que indica se a inserção foi bem-\/sucedida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para o primeiro vértice na lista de vértices após a inserção. 
+\end{DoxyReturn}
+\Hypertarget{header_8h_a3a594e0cfbee726d9b4e48fe1faeff9b}\label{header_8h_a3a594e0cfbee726d9b4e48fe1faeff9b} 
+\index{header.h@{header.h}!InsereVerticeGrafo@{InsereVerticeGrafo}}
+\index{InsereVerticeGrafo@{InsereVerticeGrafo}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{InsereVerticeGrafo()}{InsereVerticeGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*} Insere\+Vertice\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{novo,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Insere Vertice num grafo (opcao 2) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ grafo \\
+\hline
+{\em novo} & -\/ Vertice a inserir \\
+\hline
+{\em res} & -\/ controla sucesso da fun{\ucr}{\ucr}o\+: sucesso=1 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & grafo alterado \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+23.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_ae18bed4050475b99f16dd647e690e6a3}\label{header_8h_ae18bed4050475b99f16dd647e690e6a3} 
+\index{header.h@{header.h}!LerFicheiro@{LerFicheiro}}
+\index{LerFicheiro@{LerFicheiro}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{LerFicheiro()}{LerFicheiro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*} Ler\+Ficheiro (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{ficheiro\+Txt,  }\item[{\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}}]{graph }\end{DoxyParamCaption})}
+
+
+
+Lê os dados de um ficheiro de texto e cria uma matriz a partir deles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ficheiro\+Txt} & Nome do ficheiro de texto. \\
+\hline
+{\em graph} & Grafo para o qual os dados serão lidos e processados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para o início do grafo. 
+\end{DoxyReturn}
+\Hypertarget{header_8h_af9826564c3a9ed78cb7cf401c02736a4}\label{header_8h_af9826564c3a9ed78cb7cf401c02736a4} 
+\index{header.h@{header.h}!NewAdjacent@{NewAdjacent}}
+\index{NewAdjacent@{NewAdjacent}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{NewAdjacent()}{NewAdjacent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_adjacent}{Adjacent}} \texorpdfstring{$\ast$}{*} New\+Adjacent (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{dist }\end{DoxyParamCaption})}
+
+
+
+Cria mem{\ucr}ria para uma nova Adjac{\ucr}ncia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+1.\+05.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_a31002130c8e8b31acfcaec90d310198a}\label{header_8h_a31002130c8e8b31acfcaec90d310198a} 
+\index{header.h@{header.h}!OndeEstaVertice@{OndeEstaVertice}}
+\index{OndeEstaVertice@{OndeEstaVertice}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{OndeEstaVertice()}{OndeEstaVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} Onde\+Esta\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{inicio,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Verifica se determinado vertice existe. Devolve o vertice, caso exista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & -\/ \\
+\hline
+{\em id} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+23.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_a40059d17191bc99070607de8e4d5982e}\label{header_8h_a40059d17191bc99070607de8e4d5982e} 
+\index{header.h@{header.h}!OndeEstaVerticeGraph@{OndeEstaVerticeGraph}}
+\index{OndeEstaVerticeGraph@{OndeEstaVerticeGraph}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{OndeEstaVerticeGraph()}{OndeEstaVerticeGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} Onde\+Esta\+Vertice\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{id\+Vertice }\end{DoxyParamCaption})}
+
+
+
+Procura determinado vertice num grafo Devolve o vertice, caso exista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ \\
+\hline
+{\em id\+Vertice} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+29.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_a84eb164d56165c00519fa3829f536fcf}\label{header_8h_a84eb164d56165c00519fa3829f536fcf} 
+\index{header.h@{header.h}!ProcessaVertice@{ProcessaVertice}}
+\index{ProcessaVertice@{ProcessaVertice}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{ProcessaVertice()}{ProcessaVertice()}}
+{\footnotesize\ttfamily void Processa\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})}
+
+
+
+Processa um vértice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Ponteiro para o vértice a ser processado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{header_8h_aa5df864306d40237659e24e470cedc6b}\label{header_8h_aa5df864306d40237659e24e470cedc6b} 
+\index{header.h@{header.h}!ProcurarValor@{ProcurarValor}}
+\index{ProcurarValor@{ProcurarValor}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{ProcurarValor()}{ProcurarValor()}}
+{\footnotesize\ttfamily int \texorpdfstring{$\ast$}{*} Procurar\+Valor (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{ficheiro\+Txt,  }\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+Procura e retorna um valor num ficheiro de texto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ficheiro\+Txt} & Nome do ficheiro de texto. \\
+\hline
+{\em v} & Valor a ser procurado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para o valor encontrado. 
+\end{DoxyReturn}
+\Hypertarget{header_8h_a2f9dce241df30d99d07883f099565f27}\label{header_8h_a2f9dce241df30d99d07883f099565f27} 
+\index{header.h@{header.h}!ResetVertices@{ResetVertices}}
+\index{ResetVertices@{ResetVertices}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{ResetVertices()}{ResetVertices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} Reset\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{inicio }\end{DoxyParamCaption})}
+
+
+
+Reseta o estado de visitado de todos os vértices na lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & Ponteiro para o início da lista de vértices. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para o início da lista de vértices após o reset. 
+\end{DoxyReturn}
+\Hypertarget{header_8h_ac428ae88ea64c31d2dd5fdb091cf5cdc}\label{header_8h_ac428ae88ea64c31d2dd5fdb091cf5cdc} 
+\index{header.h@{header.h}!ShowGaphLA@{ShowGaphLA}}
+\index{ShowGaphLA@{ShowGaphLA}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{ShowGaphLA()}{ShowGaphLA()}}
+{\footnotesize\ttfamily void Show\+Gaph\+LA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_graph}{Graph}} \texorpdfstring{$\ast$}{*}}]{gr }\end{DoxyParamCaption})}
+
+
+
+Apresenta grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gr} & -\/ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+29.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{header_8h_ad62c8976e7917f350fe6b244f76ed973}\label{header_8h_ad62c8976e7917f350fe6b244f76ed973} 
+\index{header.h@{header.h}!ShowGraph@{ShowGraph}}
+\index{ShowGraph@{ShowGraph}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{ShowGraph()}{ShowGraph()}}
+{\footnotesize\ttfamily void Show\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{graph }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & -\/ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+23.\+04.\+2024 
+\end{DoxyDate}

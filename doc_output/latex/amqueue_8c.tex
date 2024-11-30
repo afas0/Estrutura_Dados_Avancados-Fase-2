@@ -1,0 +1,93 @@
+\doxysection{amqueue.\+c File Reference}
+\hypertarget{amqueue_8c}{}\label{amqueue_8c}\index{amqueue.c@{amqueue.c}}
+
+
+Funções para manipulação de queues.  
+
+
+{\ttfamily \#include "{}queue.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{amqueue_8c_a6bbb32f32f4a09a8f694c38d7fbba0f0}{insert\+Queue}} (int queue\mbox{[}$\,$\mbox{]}, int \texorpdfstring{$\ast$}{*}rear, int data)
+\begin{DoxyCompactList}\small\item\em Insere um elemento na queue. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{amqueue_8c_abc2d4eea6baea7c3cc89ace87090a8b6}{remove\+Queue}} (int queue\mbox{[}$\,$\mbox{]}, int \texorpdfstring{$\ast$}{*}front)
+\begin{DoxyCompactList}\small\item\em Remove um elemento da queue. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{amqueue_8c_a88facf547400b4e545f479b6406887f5}{is\+Queue\+Empty}} (int rear, int front)
+\begin{DoxyCompactList}\small\item\em Verifica se a queue está vazia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Funções para manipulação de queues. 
+
+\begin{DoxyAuthor}{Author}
+André Silva n20750 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Maio 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{amqueue_8c_a6bbb32f32f4a09a8f694c38d7fbba0f0}\label{amqueue_8c_a6bbb32f32f4a09a8f694c38d7fbba0f0} 
+\index{amqueue.c@{amqueue.c}!insertQueue@{insertQueue}}
+\index{insertQueue@{insertQueue}!amqueue.c@{amqueue.c}}
+\doxysubsubsection{\texorpdfstring{insertQueue()}{insertQueue()}}
+{\footnotesize\ttfamily bool insert\+Queue (\begin{DoxyParamCaption}\item[{int}]{queue\mbox{[}$\,$\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{rear,  }\item[{int}]{data }\end{DoxyParamCaption})}
+
+
+
+Insere um elemento na queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & Array da queue. \\
+\hline
+{\em rear} & Ponteiro para o final da queue. \\
+\hline
+{\em data} & Dados a serem inseridos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Verdadeiro se a inserção for bem-\/sucedida. 
+\end{DoxyReturn}
+\Hypertarget{amqueue_8c_a88facf547400b4e545f479b6406887f5}\label{amqueue_8c_a88facf547400b4e545f479b6406887f5} 
+\index{amqueue.c@{amqueue.c}!isQueueEmpty@{isQueueEmpty}}
+\index{isQueueEmpty@{isQueueEmpty}!amqueue.c@{amqueue.c}}
+\doxysubsubsection{\texorpdfstring{isQueueEmpty()}{isQueueEmpty()}}
+{\footnotesize\ttfamily bool is\+Queue\+Empty (\begin{DoxyParamCaption}\item[{int}]{rear,  }\item[{int}]{front }\end{DoxyParamCaption})}
+
+
+
+Verifica se a queue está vazia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rear} & Final da queue. \\
+\hline
+{\em front} & Frente da queue. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor. 
+\end{DoxyReturn}
+\Hypertarget{amqueue_8c_abc2d4eea6baea7c3cc89ace87090a8b6}\label{amqueue_8c_abc2d4eea6baea7c3cc89ace87090a8b6} 
+\index{amqueue.c@{amqueue.c}!removeQueue@{removeQueue}}
+\index{removeQueue@{removeQueue}!amqueue.c@{amqueue.c}}
+\doxysubsubsection{\texorpdfstring{removeQueue()}{removeQueue()}}
+{\footnotesize\ttfamily int remove\+Queue (\begin{DoxyParamCaption}\item[{int}]{queue\mbox{[}$\,$\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{front }\end{DoxyParamCaption})}
+
+
+
+Remove um elemento da queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & Array da queue. \\
+\hline
+{\em front} & Ponteiro para a frente da queue. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Elemento removido. 
+\end{DoxyReturn}
