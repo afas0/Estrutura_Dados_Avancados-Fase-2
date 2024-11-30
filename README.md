@@ -6,7 +6,7 @@ Este projeto implementa um conjunto de funções em C para manipulação de graf
 
 ## Funcionalidades Principais
 
-- Leitura de dados de grafo a partir de um arquivo de texto
+- Leitura de dados de grafo a partir de um ficheiro de texto
 - Impressão do grafo
 - Adição e remoção de arestas e vértices
 - Cálculo do somatório máximo de inteiros
